@@ -1,0 +1,110 @@
+{
+	"data": {
+		"physicalQuotient": {
+			"internalConditions": [{
+					"question": "How would you rate your outer appearance and facial features during this stage of your life?"
+				},
+				{
+					"question": "How would you rate the capability of your 5 sense organs: eyes, ears, nose, tongue, and skin during this stage of your life?"
+				},
+				{
+					"question": "How would you rate your physical stamina and agility during this stage of your life?"
+				}
+			],
+
+			"externalConditions": [
+
+				{
+					"question": "How politically and economically stable was your country of birth or residence during this stage of your life?"
+				},
+				{
+					"question": "How was your home situation during this stage of your life? This includes your financial situation, your relationship with your parents and siblings, and the stability of your home environment."
+				},
+				{
+					"question": "How was your relationship with people outside of your home during this stage of your life? This could include external relatives, teachers, friends, etc."
+				}
+
+			]
+		},
+
+		"intellectualQuotient": {
+			"internalConditions": [{
+					"question": "How would you rate the quality of your daily life activities, memory, comprehension, language learning ability, and ability to express yourself during this period of your life?"
+				},
+				{
+					"question": "How would you rate your learning ability in science, math, literature, etc. during this period of your life?"
+				},
+				{
+					"question": "How talented were you in the arts during this stage of your life? (art, drawing, dancing, singing, etc.)"
+				}
+			],
+			"externalConditions": [{
+					"question": "How good of an influence did people who were close to you have on your values during this stage of your life? (including grandparents, parents, siblings, nannies, friends, and schoolmates)"
+				},
+				{
+					"question": "How good of an influence did your teachers and mentors have on your values during this stage of your life? (kindergarten, elementary school, high school, university, post-graduate schools)"
+				},
+				{
+					"question": "How good of an influence did the media that you consumed have on your values during this stage of your life? (books, TV, movies, social media, internet)"
+				}
+			]
+		},
+
+		"emotionalQuotient": {
+			"internalConditions": [{
+					"question": "How would you rate your politeness, interpersonal and communication skills during this stage of your life?"
+				},
+				{
+					"question": "How would you rate your emotional management skills during this stage of your life? (regular emotion management, emotion management due to illnesses)"
+				},
+				{
+					"question": "How would you rate your conflict management skills within relationships during this stage of your life? (for ex: relationships with parents, siblings, children, relatives, friends, and work environment)"
+				}
+			],
+			"externalConditions": [{
+					"question": "How positively did your political and economic situation impact your emotional stability during this stage of your life?"
+				},
+				{
+					"question": "How positively did your cultural and gender situation impact your emotional stability during this stage of your life?"
+				},
+				{
+					"question": "How positively did your family values and economic situation affect your emotional stability during this stage of your life?"
+				}
+			]
+		},
+
+		"spiritualQuotient": {
+			"internalConditions": [{
+					"question": "How would you rate your ethical conduct (morality) and ability to choose between right and wrong during this stage of your life?"
+				},
+				{
+					"question": "How would you rate your behaviour and compassion towards people and animals during this stage of your life?"
+				},
+				{
+					"question": "How would you rate your optimism and positive attitude during this stage of your life?"
+				},
+				{
+					"question": "How would you rate your understanding of impermanence, imperfection, and suffering during this stage of your life?",
+					"descriptionList": [
+						"Impermanence: highs will not always be highs, lows will not always be lows",
+						"Imperfection: perfection does not exist and is impossible to reach",
+						"Suffering: understanding that suffering is part of life",
+						"Consciousness is the ability to suffer” in Buddhism suffering is not negative, it is just a state of being (just the way it is)"
+					]
+				}
+			],
+			"externalConditions": [{
+					"question": "How would you rate the spiritual openness of your country or family/localized community in this stage of your life?",
+					"descriptionList": [
+						"This would be room to explore your spirituality, rigidity of religious dogmas and/or spiritual options"
+					]
+				},
+				{
+					"question": "How would you rate the quality of your spiritual influences during this stage of your life? (This can come from parents, teachers, spiritual guides, and practitioners)"
+				}
+			]
+		}
+
+
+	}
+}

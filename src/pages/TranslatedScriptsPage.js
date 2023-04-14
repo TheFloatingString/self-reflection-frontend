@@ -1,11 +1,11 @@
 import React from 'react';
+import '../App.css';
 import NavigationBar from '../components/NavigationBar';
 
 function TranslatedScriptsPage() {
   return (
-    <div>
+    <div className='App'>
       <NavigationBar />
-      <div style={{padding: '0 2rem'}}>
       <h1>Translated Scripts</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eros ut risus tincidunt, 
@@ -23,7 +23,6 @@ function TranslatedScriptsPage() {
         at at magna. Nam convallis massa vitae porttitor finibus. Aliquam lobortis quam sed 
         magna facilisis, nec gravida nisl varius. 
       </p>
-    </div>
     </div>
   );
 }

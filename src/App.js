@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
+import './App.css';
 import HomePage from './pages/HomePage';
 import TranslatedScripts from './pages/TranslatedScriptsPage';
 import TranslatedScriptsPage from './pages/TranslatedScriptsPage';
@@ -11,6 +11,9 @@ import FaqPage
 import QuizPage from './pages/QuizPage';
 function App() {
   return (
+    <div className='App'>
+
+    
     <Router>
       <Routes>
         <Route exact path="/" element={<HomePage />} />
@@ -20,6 +23,7 @@ function App() {
         <Route exact path="/faq" element={<FaqPage />} />
       </Routes>
     </Router>
+    </div>
   );
 }
  

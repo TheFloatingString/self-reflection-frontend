@@ -1,9 +1,10 @@
 import React from 'react';
+import '../App.css';
 import NavigationBar from '../components/NavigationBar';
 
 function CansbridgePage() {
   return (
-    <div>
+    <div className='App'>
       <NavigationBar />
       <div style={{padding: '0 2rem'}}>
       <h1>Cansbridge</h1>

@@ -48,3 +48,26 @@
     transform: rotate(360deg);
   }
 }
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #e5e5e5;
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+}

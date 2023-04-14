@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../App.css';
 
 function NavigationBar() {
   return (
     <div>
-      <nav style={{ display: 'flex', justifyContent: 'center', backgroundColor: '#e5e5e5', padding: '1rem' }}>
-        <ul style={{ display: 'flex', listStyle: 'none', padding: 0 }}>
-          <li style={{ marginRight: '1rem', fontSize: '1.2rem' }}><Link to="/" style={{ color: 'black', fontWeight: 'bold' }}>Home</Link></li>
-          <li style={{ marginRight: '1rem', fontSize: '1.2rem' }}><Link to="/quiz" style={{ color: 'black', fontWeight: 'bold' }}>Take the Quiz</Link></li>
-          <li style={{ marginRight: '1rem', fontSize: '1.2rem' }}><Link to="/translated-scripts" style={{ color: 'black', fontWeight: 'bold' }}>Translated Scripts</Link></li>
-          <li style={{ marginRight: '1rem', fontSize: '1.2rem' }}><Link to="/cansbridge" style={{ color: 'black', fontWeight: 'bold' }}>Cansbridge</Link></li>
-          <li style={{ marginRight: '1rem', fontSize: '1.2rem' }}><Link to="/faq" style={{ color: 'black', fontWeight: 'bold' }}>FAQ</Link></li>
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/quiz">Take the Quiz</Link></li>
+          <li><Link to="/translated-scripts">Translated Scripts</Link></li>
+          <li><Link to="/cansbridge">Cansbridge</Link></li>
+          <li><Link to="/faq">FAQ</Link></li>
         </ul>
       </nav>
     </div>

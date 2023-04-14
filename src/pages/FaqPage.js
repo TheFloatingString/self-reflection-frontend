@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../App.css';
 import NavigationBar from '../components/NavigationBar';
 
 function FaqPage() {
@@ -19,11 +20,9 @@ function FaqPage() {
   };
 
   return (
-    <div>
+    <div className='App'>
         <NavigationBar />
-            <div style={{ padding: '2rem' }}>
             <h1>Frequently Asked Questions</h1>
-            <div style={{ marginTop: '1rem' }}>
                 <h3 onClick={toggleQuestion1} style={{ cursor: 'pointer' }}>Question 1</h3>
                 {showQuestion1 && (
                 <div style={{ marginTop: '1rem' }}>
@@ -42,8 +41,6 @@ function FaqPage() {
                     <p>Answer 3</p>
                 </div>
                 )}
-            </div>
-            </div>
     </div>
   );
 }

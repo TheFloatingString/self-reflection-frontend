@@ -12,8 +12,6 @@ import QuizPage from './pages/QuizPage';
 function App() {
   return (
     <div className='App'>
-
-    
     <Router>
       <Routes>
         <Route exact path="/" element={<HomePage />} />

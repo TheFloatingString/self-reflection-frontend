@@ -1,20 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import './App.css';
 import HomePage from './pages/HomePage';
-import TranslatedScripts from './pages/TranslatedScriptsPage';
 import TranslatedScriptsPage from './pages/TranslatedScriptsPage';
 import CansbridgePage from './pages/CansbridgePage';
 import SummaryPage from './pages/SummaryPage';
-import FaqPage
- from './pages/FaqPage';
+import FaqPage from './pages/FaqPage';
 import QuizPage from './pages/QuizPage';
+import LoginPage from './pages/LoginPage';
+
 function App() {
   return (
     <div className='App'>
-
-    
     <Router>
       <Routes>
         <Route exact path="/" element={<HomePage />} />
@@ -23,6 +20,7 @@ function App() {
         <Route exact path="/cansbridge" element={<CansbridgePage />} />
         <Route exact path="/faq" element={<FaqPage />} />
         <Route exact path="/summary" element={<SummaryPage />} />
+        <Route exact path="/login" element={<LoginPage />} />
       </Routes>
     </Router>
     </div>

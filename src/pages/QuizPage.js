@@ -5,6 +5,7 @@ import Input from '@mui/material/Input';
 import Rating from '@mui/material/Rating';
 import NavigationBar from '../components/NavigationBar';
 import Question from '../question.js';
+import { useState } from 'react';
 
 const questionData = require("../questions.json");
 
@@ -24,6 +25,9 @@ const emotionalQuotientElementsExternal = [];
 
 const spiritualQuotientElementsInternal = [];
 const spiritualQuotientElementsExternal = [];
+
+
+
 
 for (const index in questionData.data.physicalQuotient.internalConditions) {
 	let currentQuestion = (questionData.data.physicalQuotient.internalConditions[index].question);
@@ -84,21 +88,89 @@ for (const index in questionData.data.spiritualQuotient.externalConditions) {
 
 console.log("test");
 
-function handleSubmit(e) {
 
-	console.log("calling handleSubmit()");
-
-	e.preventDefault();
-	const form = e.target;
-	const formData = new FormData(form);
-
-	const formJson = Object.fromEntries(formData.entries());
-
-	console.log(formJson);
-
+function returnAverage(valuesList) {
+	let listSum = 0.0;
+	for (let i=0; i<valuesList.length; i++) {
+		listSum += valuesList[i];
+	}
+	return listSum/valuesList.length
 }
 
+
 function QuizPage() {
+
+	const [physicalScore, setPhysicalScore] = useState(0);
+	const [intellectualScore, setIntellectualScore] = useState(0);
+	const [emotionalScore, setEmotionalScore] = useState(0);
+	const [spiritualScore, setSpiritualScore] = useState(0);
+
+
+
+		function handleSubmit(e) {
+
+			console.log("calling handleSubmit()");
+
+			e.preventDefault();
+			const form = e.target;
+			const formData = new FormData(form);
+
+			const formJson = Object.fromEntries(formData.entries());
+
+			console.log(formJson);
+
+			let physicalScoresList = [
+				parseFloat(formJson["physical-internal-1"]),
+				parseFloat(formJson["physical-internal-2"]),
+				parseFloat(formJson["physical-internal-3"]),
+				parseFloat(formJson["physical-external-1"]),
+				parseFloat(formJson["physical-external-2"]),
+				parseFloat(formJson["physical-external-3"]),
+				];
+
+			let intellectualScoresList = [
+				parseFloat(formJson["intellectual-internal-1"]),
+				parseFloat(formJson["intellectual-internal-2"]),
+				parseFloat(formJson["intellectual-internal-3"]),
+				parseFloat(formJson["intellectual-external-1"]),
+				parseFloat(formJson["intellectual-external-2"]),
+				parseFloat(formJson["intellectual-external-3"]),
+				];
+
+			let emotionalScoresList = [
+				parseFloat(formJson["emotional-internal-1"]),
+				parseFloat(formJson["emotional-internal-2"]),
+				parseFloat(formJson["emotional-internal-3"]),
+				parseFloat(formJson["emotional-external-1"]),
+				parseFloat(formJson["emotional-external-2"]),
+				parseFloat(formJson["emotional-external-3"]),
+				];
+
+			let spiritualScoresList = [
+				parseFloat(formJson["spiritual-internal-1"]),
+				parseFloat(formJson["spiritual-internal-2"]),
+				parseFloat(formJson["spiritual-internal-3"]),
+				parseFloat(formJson["spiritual-internal-4"]),
+				parseFloat(formJson["spiritual-external-1"]),
+				parseFloat(formJson["spiritual-external-2"]),
+				];
+
+
+
+
+			const physicalAverageScore = returnAverage(physicalScoresList);
+			const intellectualAverageScore = returnAverage(intellectualScoresList);
+			const emotionalAverageScore = returnAverage(emotionalScoresList);
+			const spiritualAverageScore = returnAverage(spiritualScoresList);
+
+			setPhysicalScore(Math.round(physicalAverageScore*100)/100)
+			setIntellectualScore(Math.round(intellectualAverageScore*100)/100);
+			setEmotionalScore(Math.round(emotionalAverageScore*100)/100);
+			setSpiritualScore(Math.round(spiritualAverageScore*100)/100);
+
+		}
+
+
   return (
 	<div className="App">
         <NavigationBar />
@@ -146,6 +218,12 @@ function QuizPage() {
 		<Button variant="outlined" type="submit">Submit</Button>
 
 		</form>
+
+
+		<p>Physical score: {physicalScore}</p>
+		<p>Intellectual score: {intellectualScore}</p>
+		<p>Emotional score: {emotionalScore}</p>
+		<p>Spiritual score: {spiritualScore}</p>
 	
 	</div>
   );

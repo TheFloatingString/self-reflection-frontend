@@ -6,8 +6,66 @@ import Rating from '@mui/material/Rating';
 import NavigationBar from '../components/NavigationBar';
 import Question from '../question.js';
 import { useState } from 'react';
+import { LineChart, Line, Legend, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from 'recharts';
+
+
+
+
+
+
+
+
+
+
+
+
+
+const data = [
+	{
+	  name: 0,
+	  physicalScore: 3.2,
+	},
+	{
+	  name: 1,
+	  physicalScore: 5,
+	},
+	{
+	  name: 2,
+	  physicalScore: 5.2,
+	},
+	{
+	  name: 3,
+  	  physicalScore: 7,
+	},
+	{
+	  name: 4,
+	  physicalScore: 5.7,
+	},
+	{
+	  name: 5,
+	  physicalScore: 5,
+	},
+	{
+	  name: 6,
+	  physicalScore: 5.5,
+	},
+	{
+		name: 7,
+	  physicalScore: 5.8,
+	}
+  ];
+  
+  
+
+
+
+
+
+
 
 const questionData = require("../questions.json");
+
+let stageList = ["0", "1", "2"];
 
 
 for (const categoryProperty in questionData.data){
@@ -89,6 +147,8 @@ for (const index in questionData.data.spiritualQuotient.externalConditions) {
 console.log("test");
 
 
+let counter = 0
+
 function returnAverage(valuesList) {
 	let listSum = 0.0;
 	for (let i=0; i<valuesList.length; i++) {
@@ -100,12 +160,15 @@ function returnAverage(valuesList) {
 
 function QuizPage() {
 
+	const [physicalLog, setPhysicalLog] = useState([]);
+
+
 	const [physicalScore, setPhysicalScore] = useState(0);
 	const [intellectualScore, setIntellectualScore] = useState(0);
 	const [emotionalScore, setEmotionalScore] = useState(0);
 	const [spiritualScore, setSpiritualScore] = useState(0);
 
-
+	let [graphData, setGraphData] = useState([]);
 
 		function handleSubmit(e) {
 
@@ -155,9 +218,6 @@ function QuizPage() {
 				parseFloat(formJson["spiritual-external-2"]),
 				];
 
-
-
-
 			const physicalAverageScore = returnAverage(physicalScoresList);
 			const intellectualAverageScore = returnAverage(intellectualScoresList);
 			const emotionalAverageScore = returnAverage(emotionalScoresList);
@@ -168,6 +228,64 @@ function QuizPage() {
 			setEmotionalScore(Math.round(emotionalAverageScore*100)/100);
 			setSpiritualScore(Math.round(spiritualAverageScore*100)/100);
 
+			physicalLog.push(physicalAverageScore);
+			console.log(physicalLog);
+
+			graphData.push({
+				name: counter,
+				physicalScore: physicalAverageScore
+			})
+
+
+			setGraphData([
+				{
+				  name: 0,
+				  physicalScore: 6,
+				},
+				{
+				  name: 1,
+				  physicalScore: 5,
+				},
+				{
+				  name: 2,
+				  physicalScore: 5.2,
+				},
+				{
+				  name: 3,
+					physicalScore: 7,
+				},
+				{
+				  name: 4,
+				  physicalScore: 5.7,
+				},
+				{
+				  name: 5,
+				  physicalScore: 5,
+				},
+				{
+				  name: 6,
+				  physicalScore: 5.5,
+				},
+				{
+					name: 7,
+				  physicalScore: 5.8,
+				}
+			  ]);
+
+
+			graphData[counter] = {
+				name: counter,
+				physicalScore: physicalAverageScore
+			}
+			  
+			 
+
+
+			counter++;
+
+			console.log(graphData);
+
+
 		}
 
 
@@ -175,6 +293,8 @@ function QuizPage() {
 	<div className="App">
         <NavigationBar />
 		<h1>Self-Reflection</h1>
+
+		<h2>Current stage: {stageList[1]}</h2>
 
 	  	<form onSubmit={handleSubmit}>
 
@@ -225,6 +345,25 @@ function QuizPage() {
 		<p>Emotional score: {emotionalScore}</p>
 		<p>Spiritual score: {spiritualScore}</p>
 	
+
+		<h1>Summary of Results</h1>
+
+		<LineChart width={1000} height={600} data={graphData}>
+		<Line type="monotone" dataKey="physicalScore" stroke="#fc03df" strokeWidth={2} />
+
+		<CartesianGrid strokeDasharray="3 3" />
+
+		<Tooltip />
+
+
+		<XAxis dataKey="name" />
+		<YAxis />
+		<Legend />
+
+		</LineChart>
+
+
+
 	</div>
   );
 }

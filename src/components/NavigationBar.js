@@ -11,7 +11,7 @@ function NavigationBar() {
           <li><Link to="/quiz">Take the Quiz</Link></li>
           <li><Link to="/translated-scripts">Buddhist Sources</Link></li>
           <li><Link to="/cansbridge">Cansbridge</Link></li>
-          <li><Link to="/faq">FAQ</Link></li>
+          <li><Link to="/faq">Questions for Pondering</Link></li>
         </ul>
       </nav>
     </div>

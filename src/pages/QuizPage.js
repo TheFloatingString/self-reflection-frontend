@@ -298,38 +298,38 @@ function QuizPage() {
 
 	  	<form onSubmit={handleSubmit}>
 
-		<h3>Physical Quotient Internal</h3>
+		<h3>Physical Quotient: Internal</h3>
 
 	  	{physicalQuotientElementsInternal}
 
-		<h3>Physical Quotient External</h3>
+		<h3>Physical Quotient: External</h3>
 
 	  	{physicalQuotientElementsExternal}
 
 
-		<h3>Intellectual Quotient Internal</h3>
+		<h3>Intellectual Quotient: Internal</h3>
 
 	  	{intellectualQuotientElementsInternal}
 
-		<h3>Intellectual Quotient External</h3>
+		<h3>Intellectual Quotient: External</h3>
 
 	  	{intellectualQuotientElementsExternal}
 
 
-		<h3>Emotional Quotient Internal</h3>
+		<h3>Emotional Quotient: Internal</h3>
 
 	  	{emotionalQuotientElementsInternal}
 
-		<h3>Emotional Quotient External</h3>
+		<h3>Emotional Quotient: External</h3>
 
 	  	{emotionalQuotientElementsExternal}
 
 
-		<h3>Spiritual Quotient Internal</h3>
+		<h3>Spiritual Quotient: Internal</h3>
 
 	  	{spiritualQuotientElementsInternal}
 
-		<h3>Spiritual Quotient External</h3>
+		<h3>Spiritual Quotient: External</h3>
 
 	  	{spiritualQuotientElementsExternal}
 

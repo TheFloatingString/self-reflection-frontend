@@ -22,7 +22,7 @@ function FaqPage() {
   return (
     <div className='App'>
         <NavigationBar />
-            <h1>Frequently Asked Questions</h1>
+            <h1>Questions for Pondering</h1>
                 <h3 onClick={toggleQuestion1} style={{ cursor: 'pointer' }}>Question 1</h3>
                 {showQuestion1 && (
                 <div style={{ marginTop: '1rem' }}>

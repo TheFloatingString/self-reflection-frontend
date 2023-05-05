@@ -6,7 +6,7 @@ function TranslatedScriptsPage() {
   return (
     <div className='App'>
       <NavigationBar />
-      <h1>Translated Scripts</h1>
+      <h1>Buddhist Sources</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eros ut risus tincidunt, 
         id laoreet ipsum vestibulum. Nullam vulputate massa quis risus molestie, ut pulvinar enim 
@@ -14,7 +14,7 @@ function TranslatedScriptsPage() {
         vehicula vel. Donec suscipit tellus sit amet massa vestibulum, eget finibus tellus faucibus. 
         Donec ut tellus urna. Fusce at elit augue. Sed ac diam non diam mattis varius. 
       </p>
-      <h2>Translated Scripts</h2>
+      <h2>Bouddhist Sources</h2>
       <p>
         Sed vulputate massa sit amet semper hendrerit. Fusce sed eros a ex venenatis dictum in 
         vel risus. Vivamus hendrerit venenatis neque, eget fringilla magna consectetur quis. 

@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import '../App.css';
 import Button from '@mui/material/Button';
 import Input from '@mui/material/Input';
@@ -73,11 +72,6 @@ const data = [
 
 const questionData = require("../questions.json");
 
-
-for (const categoryProperty in questionData.data){
-	// console.log(`${categoryProperty}: ${questionData.data[categoryProperty]}`);
-}
-
 const physicalQuotientElementsInternal = [];
 const physicalQuotientElementsExternal = [];
 
@@ -91,7 +85,7 @@ const spiritualQuotientElementsInternal = [];
 const spiritualQuotientElementsExternal = [];
 
 
-
+// Populating question components
 
 for (const index in questionData.data.physicalQuotient.internalConditions) {
 	let currentQuestion = (questionData.data.physicalQuotient.internalConditions[index].question);
@@ -148,9 +142,6 @@ for (const index in questionData.data.spiritualQuotient.externalConditions) {
 	let newQuestionElement = <Question question={currentQuestion} questionIdentifier={currentQuestionIdentifier} />
 	spiritualQuotientElementsExternal.push(newQuestionElement);
 }
-
-
-console.log("test");
 
 
 let counter = 0

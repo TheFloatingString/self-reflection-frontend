@@ -17,7 +17,13 @@ import { LineChart, Line, Legend, XAxis, YAxis, Tooltip, CartesianGrid, Responsi
 
 
 
-
+const lifeStages = [
+	"Early Childhood",
+	"Middle Childhood",
+	"Teenage Stage",
+	"Older Adolescence",
+	"Early Adulthood"
+];
 
 
 
@@ -66,8 +72,6 @@ const data = [
 
 
 const questionData = require("../questions.json");
-
-let stageList = ["0", "1", "2"];
 
 
 for (const categoryProperty in questionData.data){
@@ -296,7 +300,7 @@ function QuizPage() {
         <NavigationBar />
 		<h1>Self-Reflection</h1>
 
-		<h2>Current stage: {stageList[1]}</h2>
+		<h2>Current stage: {lifeStages[counter]}</h2>
 
 	  	<form onSubmit={handleSubmit}>
 

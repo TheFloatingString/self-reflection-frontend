@@ -9,8 +9,10 @@ import Question from '../question.js';
 import { useState } from 'react';
 import { LineChart, Line, Legend, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from 'recharts';
 
+import { Navigate } from "react-router-dom";
+import { Route } from "react-router-dom";
 
-
+import { redirect } from "react-router-dom";
 
 const lifeStages = [
 	"Early Childhood",
@@ -19,7 +21,6 @@ const lifeStages = [
 	"Older Adolescence",
 	"Early Adulthood"
 ];
-
 
 
 
@@ -190,12 +191,28 @@ function QuizPage() {
 
 			setGraphData(graphData);
 
-			counter++;
 
 			console.log(graphData);
 
+			console.log(counter);
+			console.log(lifeStages[counter]);
+
+
 
 			sessionStorage.setItem("graphData", JSON.stringify(graphData));
+
+			if (counter === 4) {
+				console.log("redirecting to /summary");
+				window.location.href = "/summary";
+				// const history = useHistory();
+				// return redirect("/summary");
+			}
+
+
+			counter++;
+
+			console.log();
+			console.log();
 
 		}
 
@@ -259,25 +276,6 @@ function QuizPage() {
 		<p>Emotional score: {emotionalScore}</p>
 		<p>Spiritual score: {spiritualScore}</p>
 	
-
-		<h1>Summary of Results</h1>
-
-		<LineChart width={1000} height={600} data={physicalLog}>
-		<Line type="monotone" dataKey="physicalScore" stroke="#fc03df" strokeWidth={2} />
-
-		<CartesianGrid strokeDasharray="3 3" />
-
-		<Tooltip />
-
-
-		<XAxis dataKey="name" />
-		<YAxis />
-		<Legend />
-
-		</LineChart>
-
-
-
 	</div>
   );
 }

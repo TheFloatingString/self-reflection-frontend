@@ -73,13 +73,20 @@ import { LineChart, Line, Legend, XAxis, YAxis, Tooltip, CartesianGrid, Responsi
 
 let data = JSON.parse(sessionStorage.getItem("graphData"))
 
+console.log(data);
+
 function SummaryPage() {
 	return (
 		<div className='App'>
 			<h1>Summary of Results</h1>
 
 	        <LineChart width={1000} height={600} data={data}>
+
 	          <Line type="monotone" dataKey="physicalScore" stroke="#fc03df" strokeWidth={2} />
+            <Line type="monotone" dataKey="emotionalScore" stroke="#9403fc" strokeWidth={2} />
+            <Line type="monotone" dataKey="intellectualScore" stroke="#0bb05a" strokeWidth={2} />
+            <Line type="monotone" dataKey="spiritualScore" stroke="#fcba03" strokeWidth={2} />
+
             <CartesianGrid strokeDasharray="3 3" />
 
             <Tooltip />
@@ -101,7 +108,3 @@ function SummaryPage() {
 export default SummaryPage;
 
 
-/*            <Line type="monotone" dataKey="emotionalScore" stroke="#9403fc" strokeWidth={2} />
-            <Line type="monotone" dataKey="intellectualScore" stroke="#0bb05a" strokeWidth={2} />
-            <Line type="monotone" dataKey="spiritualScore" stroke="#fcba03" strokeWidth={2} />
-*/

@@ -185,7 +185,10 @@ function QuizPage() {
 
 			graphData.push({
 				name: lifeStages[counter],
-				physicalScore: physicalAverageScore
+				physicalScore: physicalAverageScore,
+				intellectualScore: intellectualAverageScore,
+				emotionalScore: emotionalAverageScore,
+				spiritualScore: spiritualAverageScore
 			});
 
 

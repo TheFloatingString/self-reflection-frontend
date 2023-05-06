@@ -102,11 +102,103 @@ function TranslatedScriptsPage() {
 
                 </TableCell>
 
+
+                <TableCell>
+                  <p>Buddha told Ānanda: "Those who receive different karmic consequences do so because their intentions in past lives were different. Therefore, the consequences that every sentient being experiences are varied and diverse."</p>
+
+                  <p>Those who have a beautiful body came from practicing patience.<br/> 
+                  Those who are ugly came from anger. Those who are poor came from stinginess.<br/>
+                  Those who have a high social status came from reverence, while those who are inferior came from arrogance. <br/>
+                  Those who are tall came from respect, while those who are short came from disrespect.
+                                     </p>
+
+
+                  <p>Those who are mute came from slandering the teachings of Truth, while those who are deaf came from disliking to hear the Truth. </p>
+
+
+                  <p>Those with cleft lips came from piercing the gills of fish. <br/> 
+                  Those with heart disease came from torturing and stabbing sentient beings.</p>
+
+                  <p>Those with a long life came from practicing kindness, while those with a short life came from killing. <br/>
+                  Those who are very rich came from practicing generosity.<br/> 
+                  Those who are intelligent came from studying and reciting sutras, while those who are slow came from past lives as animals.<br/>
+                  Those who are slaves came from owing debts.</p> 
+
+
+                  <p>Those who have complete sensory organs came from having observed precepts, while those with sensory deficiencies came from having broken precepts.</p>
+
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+
+<p>佛告阿難：「如向所說種種眾苦，皆由十惡之業，上者地獄因緣，中者畜生因緣，下者餓鬼因緣。</p>
+
+<p>於中殺生之罪，能令眾生墮於地獄、畜生、餓鬼；若生人中得二種果報：一者、短命；二者、多病。</p>
+
+<p>劫盜之罪...；若生人中得二種果報：一者、貧窮；二者、共財不得自在。</p>
+
+<p>邪婬之罪...；若生人中得二種果報：一者、婦不貞良；二者、二妻相諍不隨己心。</p>
+
+<p>妄語之罪...；若生人中得二種果報：一者、多被誹謗；二者、恒為多人所誑。</p>
+
+<p>兩舌之罪...；若生人中得二種果報：一者、得破壞眷屬；二者、得弊惡眷屬。</p>
+
+<p>惡口之罪...；若生人間得二種果報：一者、常聞惡聲；二者、所有言說恒有諍訟。</p>
+
+<p>綺語之罪...；若生人間有二種果報：一者、說正人不言受；二者、所有言說不能辯了。</p>
+
+<p>貪慾之罪...；若生人中得二種果報：一者、貪財無有厭足；二者、多求恒無從意。</p>
+
+<p>瞋恚之罪...；若生人中得二種果報：一者、常為他人求其長短；二者、常為他所惱害。</p>
+
+<p>邪見之罪...；若生人間得二種果報：一者、常生邪見家；二者、心恒諂曲。</p>
+
+
+                </TableCell>
+                <TableCell>
+
+<p>Buddha told Ānanda: "All the sufferings that people face are the result of the ten bad actions. Those who commit serious bad actions will go to hell. Those who commit less serious bad actions are reborn as animals. Those who commit the least of bad actions are reborn as hungry ghosts.</p>
+
+<p>The transgression of <b>killing</b> can cause beings to be reborn in the realms of hell, animals, or hungry ghosts. 
+The karmic consequences for those who are born as humans include: (1) living a short life, and (2) suffering many illnesses.</p>
+
+<p>The transgression of <b>stealing</b> has two karmic consequences: (1) poverty, and (2) lack the freedom to enjoy wealth.</p>
+
+
+<p>The transgression of <b>sexual misconduct</b> has two karmic consequences: (1) an unfaithful spouse, and (2) always being in conflict and disharmony with their partner.</p>
+
+
+<p>The transgression of <b>lying</b> has two karmic consequences: (1) being frequently defamed, and (2) constantly being deceived by many people."</p>
+
+
+
+<p>The transgression of <b>divisive speech</b> has two karmic consequences: (1) having destructive family relationships and (2) having harmful relatives.</p>
+
+
+
+<p>The transgression of <b>malicious speech</b> has two karmic consequences: (1) frequently hearing malicious words and (2) having all one's words result in conflicts.</p>
+
+
+<p>The transgression of <b>frivolous speech</b> has two karmic consequences: (1) one’s words, even though correct, will not be accepted by people, and (2) one’s words cannot be explained and defended.</p>
+
+
+<p>The transgression of <b>being greedy</b> has two karmic consequences: (1) will crave for wealth and never feeling content; (2) will crave insatiably after things beyond reach.​</p>
+
+
+<p>The transgression of <b>being angry</b> has two karmic consequences: (1) will always be accused of faults; (2) will always be afflicted and harmed by others.</p>​
+
+
+<p>The transgression of <b>holding wrong views</b> has two karmic consequences: (1) always be born in a family with wrong views; (2) the mind will always be crooked and deceitful (using flattery).​"</p>
+
+                </TableCell>
               </TableRow>
             </TableBody>
           </Table>
         </TableContainer>
 
+
+<p>Excerpts from《佛說輪轉五道罪福報應經》: https://cbetaonline.dila.edu.tw/zh/T0747b</p>
 
     </div>
   );

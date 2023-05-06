@@ -216,6 +216,8 @@ function QuizPage() {
 			console.log(graphData);
 
 
+			sessionStorage.setItem("graphData", JSON.stringify(graphData));
+
 		}
 
 

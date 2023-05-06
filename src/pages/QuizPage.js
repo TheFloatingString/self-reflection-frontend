@@ -204,8 +204,6 @@ function QuizPage() {
 			if (counter === 4) {
 				console.log("redirecting to /summary");
 				window.location.href = "/summary";
-				// const history = useHistory();
-				// return redirect("/summary");
 			}
 
 

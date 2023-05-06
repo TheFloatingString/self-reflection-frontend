@@ -122,6 +122,9 @@ function QuizPage() {
 	const [emotionalScore, setEmotionalScore] = useState(0);
 	const [spiritualScore, setSpiritualScore] = useState(0);
 
+
+	const [currentStage, setCurrentStage] = useState(lifeStages[counter]);
+
 	let [graphData, setGraphData] = useState([]);
 
 		function handleSubmit(e) {
@@ -192,16 +195,6 @@ function QuizPage() {
 			});
 
 
-			setGraphData(graphData);
-
-
-			console.log(graphData);
-
-			console.log(counter);
-			console.log(lifeStages[counter]);
-
-
-
 			sessionStorage.setItem("graphData", JSON.stringify(graphData));
 
 			if (counter === 4) {
@@ -209,6 +202,12 @@ function QuizPage() {
 				window.location.href = "/summary";
 			}
 
+
+			// rendering for next round:
+
+			setCurrentStage(lifeStages[counter+1]);
+			
+			// increment counter
 
 			counter++;
 
@@ -223,7 +222,7 @@ function QuizPage() {
         <NavigationBar />
 		<h1>Self-Reflection</h1>
 
-		<h2>Current stage: {lifeStages[counter]}</h2>
+		<h2>Current stage: {currentStage}</h2>
 
 	  	<form onSubmit={handleSubmit}>
 

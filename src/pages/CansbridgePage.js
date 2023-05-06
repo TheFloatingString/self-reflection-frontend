@@ -9,20 +9,18 @@ function CansbridgePage() {
       <div style={{padding: '0 2rem'}}>
       <h1>Cansbridge</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eros ut risus tincidunt, 
-        id laoreet ipsum vestibulum. Nullam vulputate massa quis risus molestie, ut pulvinar enim 
-        ultricies. Integer vel mauris quam. Sed sagittis libero velit, sit amet bibendum magna 
-        vehicula vel. Donec suscipit tellus sit amet massa vestibulum, eget finibus tellus faucibus. 
-        Donec ut tellus urna. Fusce at elit augue. Sed ac diam non diam mattis varius. 
+	  The Cansbridge Fellowship is a unique and highly selective fellowship which selects
+	  around 20 of the most ambitious, entrepreneurial, and high-potential university students
+	  from across Canada every year. Fellows participate in a week-long bootcamp in 
+	  San Francisco, receive $10k to spend for a Summer working in Asia, and join an exceptional
+	  and tightly-knit network that lasts for the rest of their lives. The name "Cansbridge"
+	  comes from the idea that the fellowship is Canada's "bridge" to Asia and the rest 
+	  of the world.
       </p>
-      <h2>Cansbridge</h2>
       <p>
-        Sed vulputate massa sit amet semper hendrerit. Fusce sed eros a ex venenatis dictum in 
-        vel risus. Vivamus hendrerit venenatis neque, eget fringilla magna consectetur quis. 
-        Donec dictum nibh et ex volutpat, vitae tempus enim finibus. Praesent vulputate 
-        vestibulum nisi non feugiat. Nullam a tellus eget lorem pellentesque hendrerit 
-        at at magna. Nam convallis massa vitae porttitor finibus. Aliquam lobortis quam sed 
-        magna facilisis, nec gravida nisl varius. 
+	  Every year at the bootcamp, the fellows are lucky enough to meet Shifu, a Buddhist monk, 
+	  who runs workshops and meditations to help guide the fellows as they pursue their 
+	  ambitions.
       </p>
     </div>
     </div>

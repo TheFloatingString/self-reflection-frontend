@@ -12,10 +12,6 @@ import { LineChart, Line, Legend, XAxis, YAxis, Tooltip, CartesianGrid, Responsi
 
 
 
-
-
-
-
 const lifeStages = [
 	"Early Childhood",
 	"Middle Childhood",
@@ -30,13 +26,6 @@ const lifeStages = [
 const data = [];
   
   
-
-
-
-
-
-
-
 const questionData = require("../questions.json");
 
 const physicalQuotientElementsInternal = [];
@@ -191,16 +180,6 @@ function QuizPage() {
 			setIntellectualScore(Math.round(intellectualAverageScore*100)/100);
 			setEmotionalScore(Math.round(emotionalAverageScore*100)/100);
 			setSpiritualScore(Math.round(spiritualAverageScore*100)/100);
-
-
-			physicalLog.push({
-				name: lifeStages[counter],
-				physicalScore: physicalAverageScore
-			});
-
-			console.log("physicalLog:")
-			console.log(physicalLog);
-
 
 
 			graphData.push({

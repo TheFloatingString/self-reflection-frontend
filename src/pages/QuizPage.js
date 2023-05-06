@@ -185,7 +185,10 @@ function QuizPage() {
 
 			graphData.push({
 				name: lifeStages[counter],
-				physicalScore: physicalAverageScore
+				physicalScore: physicalAverageScore,
+				intellectualScore: intellectualAverageScore,
+				emotionalScore: emotionalAverageScore,
+				spiritualScore: spiritualAverageScore
 			});
 
 
@@ -204,8 +207,6 @@ function QuizPage() {
 			if (counter === 4) {
 				console.log("redirecting to /summary");
 				window.location.href = "/summary";
-				// const history = useHistory();
-				// return redirect("/summary");
 			}
 
 

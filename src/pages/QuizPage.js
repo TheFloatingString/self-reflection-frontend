@@ -27,40 +27,7 @@ const lifeStages = [
 
 
 
-const data = [
-	{
-	  name: 0,
-	  physicalScore: 3.2,
-	},
-	{
-	  name: 1,
-	  physicalScore: 5,
-	},
-	{
-	  name: 2,
-	  physicalScore: 5.2,
-	},
-	{
-	  name: 3,
-  	  physicalScore: 7,
-	},
-	{
-	  name: 4,
-	  physicalScore: 5.7,
-	},
-	{
-	  name: 5,
-	  physicalScore: 5,
-	},
-	{
-	  name: 6,
-	  physicalScore: 5.5,
-	},
-	{
-		name: 7,
-	  physicalScore: 5.8,
-	}
-  ];
+const data = [];
   
   
 
@@ -225,58 +192,24 @@ function QuizPage() {
 			setEmotionalScore(Math.round(emotionalAverageScore*100)/100);
 			setSpiritualScore(Math.round(spiritualAverageScore*100)/100);
 
-			physicalLog.push(physicalAverageScore);
+
+			physicalLog.push({
+				name: lifeStages[counter],
+				physicalScore: physicalAverageScore
+			});
+
+			console.log("physicalLog:")
 			console.log(physicalLog);
 
+
+
 			graphData.push({
-				name: counter,
+				name: lifeStages[counter],
 				physicalScore: physicalAverageScore
-			})
+			});
 
 
-			setGraphData([
-				{
-				  name: 0,
-				  physicalScore: 6,
-				},
-				{
-				  name: 1,
-				  physicalScore: 5,
-				},
-				{
-				  name: 2,
-				  physicalScore: 5.2,
-				},
-				{
-				  name: 3,
-					physicalScore: 7,
-				},
-				{
-				  name: 4,
-				  physicalScore: 5.7,
-				},
-				{
-				  name: 5,
-				  physicalScore: 5,
-				},
-				{
-				  name: 6,
-				  physicalScore: 5.5,
-				},
-				{
-					name: 7,
-				  physicalScore: 5.8,
-				}
-			  ]);
-
-
-			graphData[counter] = {
-				name: counter,
-				physicalScore: physicalAverageScore
-			}
-			  
-			 
-
+			setGraphData(graphData);
 
 			counter++;
 
@@ -348,7 +281,7 @@ function QuizPage() {
 
 		<h1>Summary of Results</h1>
 
-		<LineChart width={1000} height={600} data={graphData}>
+		<LineChart width={1000} height={600} data={physicalLog}>
 		<Line type="monotone" dataKey="physicalScore" stroke="#fc03df" strokeWidth={2} />
 
 		<CartesianGrid strokeDasharray="3 3" />

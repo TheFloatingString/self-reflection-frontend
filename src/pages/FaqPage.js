@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import '../App.css';
 import NavigationBar from '../components/NavigationBar';
 
-import List from "@mui/material/List"
-import ListItem from "@mui/material/ListItem"
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+
+import Divider from "@mui/material/Divider";
 
 function FaqPage() {
   const [showQuestion1, setShowQuestion1] = useState(false);
@@ -81,7 +83,7 @@ Can emotional management ability be acquired during our lifetime, or is it innat
 <p>Is spirituality an optional or essential aspect of life? <br />
 Can one be happy and at peace in life without being spiritual?</p>
 
-<p>--------------------------</p>
+<Divider />
 
 <p><b>FAQ on Karma and Consequence</b></p>
 

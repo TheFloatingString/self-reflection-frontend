@@ -3,6 +3,8 @@ import '../App.css';
 import Button from '@mui/material/Button';
 import Input from '@mui/material/Input';
 import Rating from '@mui/material/Rating';
+import Divider from "@mui/material/Divider";
+
 import NavigationBar from '../components/NavigationBar';
 import Question from '../question.js';
 import { useState } from 'react';
@@ -306,6 +308,7 @@ function QuizPage() {
 
 	  	{physicalQuotientElementsExternal}
 
+	  	<Divider />
 
 		<h3>Intellectual Quotient: Internal</h3>
 
@@ -315,6 +318,7 @@ function QuizPage() {
 
 	  	{intellectualQuotientElementsExternal}
 
+	  	<Divider />
 
 		<h3>Emotional Quotient: Internal</h3>
 
@@ -324,6 +328,7 @@ function QuizPage() {
 
 	  	{emotionalQuotientElementsExternal}
 
+	  	<Divider />
 
 		<h3>Spiritual Quotient: Internal</h3>
 

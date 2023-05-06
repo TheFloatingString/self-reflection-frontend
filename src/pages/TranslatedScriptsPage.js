@@ -198,7 +198,63 @@ The karmic consequences for those who are born as humans include: (1) living a s
         </TableContainer>
 
 
-<p>Excerpts from《佛說輪轉五道罪福報應經》: https://cbetaonline.dila.edu.tw/zh/T0747b</p>
+<p>Excerpts from《佛說輪轉五道罪福報應經》: <a href="https://cbetaonline.dila.edu.tw/zh/T0747b">https://cbetaonline.dila.edu.tw/zh/T0747b</a></p>
+
+<h2><i>Sūtra on the Karma and Consequence of Rebirth in the Five Realms
+</i></h2>
+
+
+<TableContainer component={Paper}>
+  <Table>
+    <TableBody>
+      <TableRow>
+        <TableCell>
+          <p>佛語阿難：「吾觀天地萬物，各有宿緣。」</p>
+          <p>阿難即前為佛作禮，長跪白佛言：「何等宿緣？此諸弟子願欲聞之，唯具演說，開化未聞！」</p>
+          <p>佛告阿難：「善哉！善哉！若樂聞者，[3]心善聽。」</p>
+        </TableCell>
+        <TableCell>
+          <p>Buddha said to Ānanda, "I see that all things in the universe have their own karma from the past." <br/>
+            Ānanda then paid homage to the Buddha and asked, "What is this karma, and all these disciples wish to hear about it. Please explain and enlighten us." </p>
+
+            <p>Buddha replied, "Good, good! If one is pleased to hear, listen well with a good heart."</p>
+
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell>
+          <p>2. 人如巨富，財寶無限，富敵侯王者，從夙世 慷慨布施，樂善不倦中來。</p>
+
+          <p>3. 人如長壽，身體康強，毫無病苦者，從夙生 嚴修大戒，持齋戒殺中來。</p>
+
+          <p>4. 人如品貌超越，性情溫和，令人生敬者，從夙生 度量寬宏，忍辱不校中來。</p>
+
+          <p>5. 人如樂修福慧，不憍不快，始終不懈者，從夙生 參求大道，勇猛精進中來。</p>
+
+          <p>6. 人如氣度安詳，沈靜寡言善於審察，不輕舉動者，從夙生修習禪定，心不妄動中來。</p>
+
+          <p>7. 人如開明特達，善解深法，讚歎妙義，開悟愚蒙，人間其言，莫不向化者，從夙生修般若德，燃智慧炬中來。</p>
+
+        </TableCell>
+        <TableCell>
+
+          <p>If a person is extremely rich and prosperous, possessing countless treasures and able to rival dukes and kings, it is because in past lives that person has been generous and tireless in giving to others and doing good.</p>
+
+          <p>If a person has a long life and a strong body without illness, it is because in past lives that person has rigorously followed the precepts and abstained from killing or harming other living beings.</p>
+
+          <p>If a person has an attractive appearance, a gentle and respectful personality, it is because in past lives that person has been generous, tolerant, and patient.</p>
+
+          <p>If a person is happy to cultivate merit and wisdom, without being arrogant or complacent, always striving without rest, it is because in past lives that person has diligently sought the path of the Great Vehicle with courage and diligence.</p>
+
+          <p>If a person is composed and calm, quiet with few words but good at observing and does not act impulsively, it is because in past lives that person has cultivated meditation and concentration, and thus his mind remains undisturbed.</p>
+
+          <p>If a person has a brilliant mind and deep understanding of the teachings, able to praise wisdom and enlighten the ignorant, with all their words influencing others, it is because in past lives that person has cultivated the wisdom of Prajñā, igniting the flame of wisdom.</p>
+
+        </TableCell>
+      </TableRow>
+    </TableBody>
+  </Table>
+</TableContainer>
 
     </div>
   );

@@ -212,6 +212,13 @@ function QuizPage() {
 
 			setCurrentStage(lifeStages[counter+1]);
 			
+
+			// scroll to top
+			const element = document.getElementById("self-reflection-title");
+			if (element) {
+				element.scrollIntoView( {behavior: 'smooth'} );
+			}
+
 			// increment counter
 
 			counter++;
@@ -225,7 +232,7 @@ function QuizPage() {
   return (
 	<div className="App">
         <NavigationBar />
-		<h1>Self-Reflection</h1>
+		<h1 id="self-reflection-title">Self-Reflection</h1>
 
 		<h2>Current stage: {currentStage}</h2>
 

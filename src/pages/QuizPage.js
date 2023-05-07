@@ -4,6 +4,12 @@ import Input from '@mui/material/Input';
 import Rating from '@mui/material/Rating';
 import Divider from "@mui/material/Divider";
 
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+
+
+
 import NavigationBar from '../components/NavigationBar';
 import Question from '../question.js';
 import { useState } from 'react';
@@ -234,6 +240,20 @@ function QuizPage() {
         <NavigationBar />
 		<h1 id="self-reflection-title">Self-Reflection</h1>
 
+		<center>	
+			<Card sx={{ width: 500 }}>
+				<CardContent>
+					<Typography>
+								<p>「欲知前世因，今生受者是；欲知未來果，今生作者是。」</p>
+								<p>"To know the causes of your past lives, look at your current circumstances. To know the consequences of your future lives, look at your current actions." </p>
+					</Typography>
+				</CardContent>
+			</Card>
+		</center>
+
+
+
+
 		<h2>Current stage: {currentStage}</h2>
 
 	  	<form onSubmit={handleSubmit}>
@@ -278,9 +298,15 @@ function QuizPage() {
 
 
 
+	  	<h5>Please complete the form for the following life stage, after clicking 'Submit'.</h5>
+
+
 		<Button variant="outlined" type="submit">Submit</Button>
 
 		</form>
+
+
+		<br/><br/>
 
 	</div>
   );

@@ -180,18 +180,23 @@ function QuizPage() {
 			const emotionalAverageScore = returnAverage(emotionalScoresList);
 			const spiritualAverageScore = returnAverage(spiritualScoresList);
 
-			setPhysicalScore(Math.round(physicalAverageScore*100)/100)
-			setIntellectualScore(Math.round(intellectualAverageScore*100)/100);
-			setEmotionalScore(Math.round(emotionalAverageScore*100)/100);
-			setSpiritualScore(Math.round(spiritualAverageScore*100)/100);
+			// setPhysicalScore(Math.round(physicalAverageScore*100)/100)
+			// setIntellectualScore(Math.round(intellectualAverageScore*100)/100);
+			// setEmotionalScore(Math.round(emotionalAverageScore*100)/100);
+			// setSpiritualScore(Math.round(spiritualAverageScore*100)/100);
+
+			const physicalScoreRounded = Math.round(physicalAverageScore*100)/100;
+			const intellectualScoreRounded = Math.round(intellectualAverageScore*100)/100;
+			const emotionalScoreRounded = Math.round(emotionalAverageScore*100)/100;
+			const spiritualScoreRounded = Math.round(spiritualAverageScore*100)/100;
 
 
 			graphData.push({
 				name: lifeStages[counter],
-				physicalScore: physicalAverageScore,
-				intellectualScore: intellectualAverageScore,
-				emotionalScore: emotionalAverageScore,
-				spiritualScore: spiritualAverageScore
+				physicalScore: physicalScoreRounded,
+				intellectualScore: intellectualScoreRounded,
+				emotionalScore: emotionalScoreRounded,
+				spiritualScore: spiritualScoreRounded
 			});
 
 
@@ -270,12 +275,6 @@ function QuizPage() {
 
 		</form>
 
-
-		<p>Physical score: {physicalScore}</p>
-		<p>Intellectual score: {intellectualScore}</p>
-		<p>Emotional score: {emotionalScore}</p>
-		<p>Spiritual score: {spiritualScore}</p>
-	
 	</div>
   );
 }

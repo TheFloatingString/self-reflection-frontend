@@ -56,13 +56,13 @@ nav {
   padding: 1rem;
 }
 
-ul {
+.ul-navbar {
   display: flex;
   list-style: none;
   padding: 0;
 }
 
-li {
+.li-navbar {
   margin-right: 1rem;
   font-size: 1.2rem;
 }

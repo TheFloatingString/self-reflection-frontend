@@ -6,12 +6,12 @@ function NavigationBar() {
   return (
     <div>
       <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/quiz">Take the Quiz</Link></li>
-          <li><Link to="/translated-scripts">Buddhist Sources</Link></li>
-          <li><Link to="/cansbridge">Cansbridge</Link></li>
-          <li><Link to="/faq">Questions for Pondering</Link></li>
+        <ul class="ul-navbar">
+          <li class="li-navbar"><Link to="/">Home</Link></li>
+          <li class="li-navbar"><Link to="/quiz">Take the Quiz</Link></li>
+          <li class="li-navbar"><Link to="/translated-scripts">Buddhist Sources</Link></li>
+          <li class="li-navbar"><Link to="/cansbridge">Cansbridge</Link></li>
+          <li class="li-navbar"><Link to="/faq">Questions for Pondering</Link></li>
         </ul>
       </nav>
     </div>

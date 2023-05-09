@@ -259,6 +259,19 @@ function QuizPage() {
 					</Typography>
 				</CardContent>
 			</Card>
+
+			<br />
+
+			
+			<h3>Scoring Guide</h3>
+
+			<p><b>1 star:</b> fully dissatisfied<br/>
+			<b>7 stars:</b> fully satisfied</p>
+			<br />
+
+			<Divider />
+
+
 		</center>
 
 

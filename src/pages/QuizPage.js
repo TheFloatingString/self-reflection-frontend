@@ -28,6 +28,14 @@ const lifeStages = [
 	"Early Adulthood"
 ];
 
+const ageRanges = [
+	"0-7",
+	"7-12",
+	"12-17",
+	"17-21",
+	"21-30"
+];
+
 
 
 const data = [];
@@ -130,6 +138,7 @@ function QuizPage() {
 
 
 	const [currentStage, setCurrentStage] = useState(lifeStages[counter]);
+	const [currentAgeRange, setCurrentAgeRange] = useState(lifeStages[counter]);
 
 	let [graphData, setGraphData] = useState([]);
 
@@ -217,6 +226,7 @@ function QuizPage() {
 			// rendering for next round:
 
 			setCurrentStage(lifeStages[counter+1]);
+			setCurrentAgeRange(ageRanges[counter+1]);
 			
 
 			// scroll to top
@@ -255,6 +265,9 @@ function QuizPage() {
 
 
 		<h2>Current stage: {currentStage}</h2>
+		<h3>Age range: {currentAgeRange}</h3>
+
+		<Divider />
 
 	  	<form onSubmit={handleSubmit}>
 

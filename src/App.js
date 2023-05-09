@@ -12,19 +12,17 @@ import LoginPage from './pages/LoginPage';
 function App() {
   return (
     <div className='AppHolder'>
-      <div className='content'>
-        <Router>
-          <Routes>
-            <Route exact path="/" element={<HomePage />} />
-            <Route exact path="/quiz" element={<QuizPage />} />
-            <Route exact path="/translated-scripts" element={<TranslatedScriptsPage />} />
-            <Route exact path="/cansbridge" element={<CansbridgePage />} />
-            <Route exact path="/faq" element={<FaqPage />} />
-            <Route exact path="/summary" element={<SummaryPage />} />
-            <Route exact path="/login" element={<LoginPage />} />
-          </Routes>
-        </Router>
-      </div>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/quiz" element={<QuizPage />} />
+          <Route exact path="/translated-scripts" element={<TranslatedScriptsPage />} />
+          <Route exact path="/cansbridge" element={<CansbridgePage />} />
+          <Route exact path="/faq" element={<FaqPage />} />
+          <Route exact path="/summary" element={<SummaryPage />} />
+          <Route exact path="/login" element={<LoginPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

@@ -138,7 +138,7 @@ function QuizPage() {
 
 
 	const [currentStage, setCurrentStage] = useState(lifeStages[counter]);
-	const [currentAgeRange, setCurrentAgeRange] = useState(lifeStages[counter]);
+	const [currentAgeRange, setCurrentAgeRange] = useState(ageRanges[counter]);
 
 	let [graphData, setGraphData] = useState([]);
 
@@ -251,7 +251,7 @@ function QuizPage() {
 		<h1 id="self-reflection-title">Self-Reflection</h1>
 
 		<center>	
-			<Card sx={{ width: 500 }}>
+			<Card sx={{ width: 350 }}>
 				<CardContent>
 					<Typography>
 								<p>「欲知前世因，今生受者是；欲知未來果，今生作者是。」</p>
@@ -265,7 +265,7 @@ function QuizPage() {
 
 
 		<h2>Current stage: {currentStage}</h2>
-		<h3>Age range: {currentAgeRange}</h3>
+		<h3>Age range: {currentAgeRange} years old</h3>
 
 		<Divider />
 

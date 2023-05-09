@@ -25,20 +25,21 @@ function FaqPage() {
   };
 
   return (
-    <div className='App'>
+    <div className='AppFaq'>
         <NavigationBar />
             <h1>Questions for Pondering</h1>
 
 
-<p>「欲知前世因，今生受者是；欲知未來果，今生作者是。」
+<p>「欲知前世因，今生受者是；欲知未來果，今生作者是。」 <br /><br />
 "To know the causes of your past lives, look at your current circumstances. To know the consequences of your future lives, look at your current actions." </p>
 
 <p>It highlights the concept of karma, where one's current experiences are the result of past actions and one's future experiences are determined by one's present actions.</p>
 
 
-<p><b>Aren’t we all simply direct results of nature and nurture, meaning genetics, lifestyle, personal care and environment, etc.?</b></p>
+<h3>Aren’t we all simply direct results of nature and nurture, meaning genetics, lifestyle, personal care and environment, etc.?</h3>
 
-<p><b>How does each life stage reflect our karma from past lives?</b><br/>
+<h3>How does each life stage reflect our karma from past lives?</h3>
+<p>
   From birth and living through early childhood, middle childhood and teenage stage (up to 17 years old), we are heavily dependent on our parents for emotional, educational and financial support. This is a direct reflection of the karma we created in past lives. </p>
 
   <p>After the age of 17 we start to make decisions that will either benefit or harm other beings and our environment. </p>
@@ -52,7 +53,7 @@ function FaqPage() {
 
 
 
-<p><b>Physical Quotient</b></p>
+<h3>Physical Quotient</h3>
 
 <p>- Isn’t it purely genetics that we get from our biological parents? What does it have to do with karma?</p>
 <ul>
@@ -67,25 +68,25 @@ function FaqPage() {
 <p>On health and longevity: If health and longevity is the consequence of having protected beings (humans and non-humans) in past lives, how come some healthy people are cruel and harmful to beings.</p>
 
 
-<p><b>Intellectual Quotient</b></p>
+<h3>Intellectual Quotient</h3>
 
 <p>Isn’t IQ a direct product of our environment?</p>
 
 
-<p><b>Emotional Quotient</b></p>
+<h3>Emotional Quotient</h3>
 
 <p>Is personality hard-wired or can it be altered? <br />
 Can emotional management ability be acquired during our lifetime, or is it innate?</p>
 
 
-<p><b>Spiritual Quotient</b></p>
+<h3>Spiritual Quotient</h3>
 
 <p>Is spirituality an optional or essential aspect of life? <br />
 Can one be happy and at peace in life without being spiritual?</p>
 
 <Divider />
 
-<p><b>FAQ on Karma and Consequence</b></p>
+<h3>FAQ on Karma and Consequence</h3>
 
 <p>If generosity from past lives leads to wealth in the present life, how come some rich people are notably stingy? </p>
 

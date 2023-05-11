@@ -1,3 +1,13 @@
+# Self-Reflection-Frontend
+
+Frontend for self-reflection website.
+
+As of May 10, 2023, commits to the `main` branch are automatically deployed to Netlify at [https://cansbridge-self-reflection.netlify.app](https://cansbridge-self-reflection.netlify.app).
+
+As of May 10, 2023, built using React.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

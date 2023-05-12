@@ -98,9 +98,9 @@ function SummaryPage() {
 
 	        </LineChart>
 
-
-
+			<p>Please take a screenshot, and share the screenshot with Shifu.</p>
 		</div>
+
 
 		);
 }

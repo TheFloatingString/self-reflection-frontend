@@ -8,6 +8,9 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+
 
 
 import NavigationBar from '../components/NavigationBar';
@@ -254,8 +257,10 @@ function QuizPage() {
 			<Card sx={{ width: 350 }}>
 				<CardContent>
 					<Typography>
-								<p>「欲知前世因，今生受者是；欲知未來果，今生作者是。」</p>
-								<p>"To know the causes of your past lives, look at your current circumstances. To know the consequences of your future lives, look at your current actions." </p>
+								<p>「欲知前世因，今生受者是；<br/>
+								欲知未來果，今生作者是。」</p>
+								<p>"To know the causes of your past lives, look at your current circumstances. <br/>
+								To know the consequences of your future lives, look at your current actions." </p>
 					</Typography>
 				</CardContent>
 			</Card>
@@ -265,9 +270,35 @@ function QuizPage() {
 			
 			<h3>Scoring Guide</h3>
 
-			<p><b>1 star:</b> fully dissatisfied<br/>
-			<b>7 stars:</b> fully satisfied</p>
+			<Box>
+
+				<Grid container spacing={3}>
+					<Grid item xs={4}>
+						<b>1 star:</b> fully dissatisfied
+					</Grid>
+					<Grid item xs={4}>
+						<b>4 stars:</b> acceptable
+					</Grid>
+					<Grid item xs={4}>
+						<b>7 stars:</b> fully satisfied
+					</Grid>
+				</Grid>
+
+			</Box>
+
 			<br />
+
+			<h3>Life Stages</h3>
+
+
+			Early Childhood (0-7) <br/>
+			Middle Childhood (7-12) <br/>
+			Teenage Stage (12-17)<br/>
+			Older Adolescence (17-21)<br/>
+			Early Adulthood (21-30)<br/>
+
+			<br/>
+
 
 			<Divider />
 
@@ -275,7 +306,7 @@ function QuizPage() {
 		</center>
 
 
-
+		<h3><i>Let's begin.</i></h3>
 
 		<h2>Current stage: {currentStage}</h2>
 		<h3>Age range: {currentAgeRange} years old</h3>

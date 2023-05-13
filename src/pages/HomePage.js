@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import NavigationBar from '../components/NavigationBar';
 
+sessionStorage.setItem("graphData", JSON.stringify([]));
+
 function HomePage() {
   return (
     <div className='App'>

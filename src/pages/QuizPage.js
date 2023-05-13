@@ -128,7 +128,7 @@ function returnAverage(valuesList) {
 	return listSum/valuesList.length
 }
 
-let summaryComponent = "Let's begin"
+let summaryComponent = "Let's begin."
 
 
 function QuizPage() {

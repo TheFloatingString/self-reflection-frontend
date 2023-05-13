@@ -131,6 +131,22 @@ function returnAverage(valuesList) {
 let summaryComponent = "Let's begin."
 
 
+function displaySummary(lifeStage, physicalScore, intellectualScore, emotionalScore, spiritualScore) {
+	return(
+
+		<div>
+			<b>Previous life stage</b> {lifeStage} <br/>
+			<b>Physical score</b>: {physicalScore} <br/>
+			<b>Intellectual score</b>: {intellectualScore} <br/>
+			<b>Emotional score</b>: {emotionalScore} <br/>
+			<b>Spiritual score</b>: {spiritualScore}
+
+		</div>
+
+		);
+}
+
+
 function QuizPage() {
 
 	const [physicalLog, setPhysicalLog] = useState([]);
@@ -238,6 +254,17 @@ function QuizPage() {
 			const element = document.getElementById("self-reflection-title");
 			if (element) {
 				element.scrollIntoView( {behavior: 'smooth'} );
+			}
+
+			if (counter > -1 ) {
+				summaryComponent = displaySummary(
+					lifeStages[counter], 
+					physicalScoreRounded, 
+					intellectualScoreRounded, 
+					emotionalScoreRounded, 
+					spiritualScoreRounded
+					);
+				console.log(summaryComponent);
 			}
 
 			// increment counter

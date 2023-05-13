@@ -128,6 +128,8 @@ function returnAverage(valuesList) {
 	return listSum/valuesList.length
 }
 
+let summaryComponent = "Let's begin"
+
 
 function QuizPage() {
 
@@ -306,7 +308,15 @@ function QuizPage() {
 		</center>
 
 
-		<h3><i>Let's begin.</i></h3>
+		<br/ >
+
+		{ summaryComponent }
+
+		<br/ >
+		<br/ >
+
+
+		<Divider />
 
 		<h2>Current stage: {currentStage}</h2>
 		<h3>Age range: {currentAgeRange} years old</h3>

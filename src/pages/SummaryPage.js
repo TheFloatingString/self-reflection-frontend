@@ -3,6 +3,14 @@ import '../App.css'
 
 import { LineChart, Line, Legend, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from 'recharts';
 
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
+
 // const data = [
 //   {
 //     name: 'Early Childhood',
@@ -75,6 +83,38 @@ let data = JSON.parse(sessionStorage.getItem("graphData"))
 
 console.log(data);
 
+function createData (
+		lifeStage,
+		singlePhysicalScore,
+		singleEmotionalScore,
+		singleIntellectualScore,
+		singleSpiritualScore
+	) {
+	return {
+		lifeStage,
+		singlePhysicalScore,
+		singleEmotionalScore,
+		singleIntellectualScore,
+		singleSpiritualScore
+	}
+}
+
+let rows = []
+
+for (let i=0; i<data.length; i++) {
+	rows.push(
+		createData(
+
+			data[i].name,
+			data[i].physicalScore,
+			data[i].emotionalScore,
+			data[i].intellectualScore,
+			data[i].spiritualScore
+
+			)
+		);
+}
+
 function SummaryPage() {
 	return (
 		<div className='App'>
@@ -82,7 +122,7 @@ function SummaryPage() {
 
 	        <LineChart width={1000} height={600} data={data}>
 
-	          <Line type="monotone" dataKey="physicalScore" stroke="#fc03df" strokeWidth={2} />
+	        <Line type="monotone" dataKey="physicalScore" stroke="#fc03df" strokeWidth={2} />
             <Line type="monotone" dataKey="emotionalScore" stroke="#9403fc" strokeWidth={2} />
             <Line type="monotone" dataKey="intellectualScore" stroke="#0bb05a" strokeWidth={2} />
             <Line type="monotone" dataKey="spiritualScore" stroke="#fcba03" strokeWidth={2} />
@@ -98,7 +138,51 @@ function SummaryPage() {
 
 	        </LineChart>
 
-			<p>Please take a screenshot, and share the screenshot with Shifu.</p>
+
+			<br/> <br/>
+
+			<p>Please take a screenshot of the graph and table, and share the screenshot with Shifu.</p>
+
+			<br/> <br/>
+
+
+			<TableContainer component={Paper}>
+				<Table sx={{minWidth: 30}}>
+					<TableHead>
+						<TableCell>Life Stage</TableCell>
+						<TableCell>Physical Score Average</TableCell>
+						<TableCell>Emotional Score Average</TableCell>
+						<TableCell>Intellectual Score Average</TableCell>
+						<TableCell>Spiritual Score Average</TableCell>
+					</TableHead>
+					<TableBody>
+
+						{rows.map((row) => (
+
+								<TableRow>
+
+									<TableCell>{row.lifeStage}</TableCell>
+									<TableCell>{row.singlePhysicalScore}</TableCell>
+									<TableCell>{row.singleEmotionalScore}</TableCell>
+									<TableCell>{row.singleIntellectualScore}</TableCell>
+									<TableCell>{row.singleSpiritualScore}</TableCell>
+
+								</TableRow>
+
+							))}
+
+					</TableBody>
+				</Table>
+			</TableContainer>
+
+
+
+
+
+
+
+
+
 		</div>
 
 

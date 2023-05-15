@@ -79,40 +79,47 @@ import Paper from '@mui/material/Paper';
 // ];
 
 
-let data = JSON.parse(sessionStorage.getItem("graphData"))
-
-console.log(data);
-
-function createData (
-		lifeStage,
-		singlePhysicalScore,
-		singleEmotionalScore,
-		singleIntellectualScore,
-		singleSpiritualScore
-	) {
-	return {
-		lifeStage,
-		singlePhysicalScore,
-		singleEmotionalScore,
-		singleIntellectualScore,
-		singleSpiritualScore
-	}
-}
-
+let quizStarted = sessionStorage.getItem("quizStarted");
 let rows = []
 
-for (let i=0; i<data.length; i++) {
-	rows.push(
-		createData(
 
-			data[i].name,
-			data[i].physicalScore,
-			data[i].emotionalScore,
-			data[i].intellectualScore,
-			data[i].spiritualScore
+if (quizStarted === "true") {
 
-			)
-		);
+	let data = JSON.parse(sessionStorage.getItem("graphData"))
+
+	console.log(data);
+
+	function createData (
+			lifeStage,
+			singlePhysicalScore,
+			singleEmotionalScore,
+			singleIntellectualScore,
+			singleSpiritualScore
+		) {
+		return {
+			lifeStage,
+			singlePhysicalScore,
+			singleEmotionalScore,
+			singleIntellectualScore,
+			singleSpiritualScore
+		}
+	}
+
+
+	for (let i=0; i<data.length; i++) {
+		rows.push(
+			createData(
+
+				data[i].name,
+				data[i].physicalScore,
+				data[i].emotionalScore,
+				data[i].intellectualScore,
+				data[i].spiritualScore
+
+				)
+			);
+}
+
 }
 
 function SummaryPage() {

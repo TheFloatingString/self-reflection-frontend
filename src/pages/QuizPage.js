@@ -243,6 +243,11 @@ function QuizPage() {
 				window.location.href = "/summary";
 			}
 
+			let quizStarted = sessionStorage.getItem("quizStarted");
+			if (quizStarted === "false") {
+				sessionStorage.setItem("quizStarted", "true");
+			}
+
 
 			// rendering for next round:
 

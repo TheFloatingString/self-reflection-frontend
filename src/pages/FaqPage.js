@@ -30,8 +30,8 @@ function FaqPage() {
             <h1>Questions for Pondering</h1>
 
 
-<p>「欲知前世因，今生受者是；欲知未來果，今生作者是。」 <br /><br />
-"To know the causes of your past lives, look at your current circumstances. To know the consequences of your future lives, look at your current actions." </p>
+<p>「欲知前世因，今生受者是；<br/>欲知未來果，今生作者是。」 <br /><br />
+"To know the causes of your past lives, look at your current circumstances. <br/>To know the consequences of your future lives, look at your current actions." </p>
 
 <p>It highlights the concept of karma, where one's current experiences are the result of past actions and one's future experiences are determined by one's present actions.</p>
 
